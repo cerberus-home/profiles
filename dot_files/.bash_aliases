@@ -74,8 +74,8 @@ gqsave() {
 
 cpprofile () {
 	
-	cp ~/.bash_aliases /Users/karthish/Desktop/Repos/Private/dot_files/.bash_aliases
-	cp ~/.zshrc /Users/karthish/Desktop/Repos/Private/dot_files/.zshrc
+	cp ~/.bash_aliases ~/Desktop/Repos/profiles/dot_files/.bash_aliases
+	cp ~/.zshrc ~/Desktop/Repos/profiles/dot_files/.zshrc
 }
 
 
