@@ -51,7 +51,7 @@ mkproject() {
         return 1
     fi
 
-    mkdir -p "$1" && cd "$1" || return
+    mkdir -p "$HOME/$1" && cd "$HOME/$1" || return
     mkdir -p ./logs ./scans ./scope ./tools ./evidence/{credentials,data,screenshots}
     echo "Project '$1' created and ready!"
 }
@@ -72,8 +72,7 @@ gqsave() {
     git push -u origin
 }
 
-cpprofile () {
-	
+cpprofile () {	
 	cp ~/.bash_aliases ~/Desktop/Repos/profiles/dot_files/.bash_aliases
 	cp ~/.zshrc ~/Desktop/Repos/profiles/dot_files/.zshrc
 }
