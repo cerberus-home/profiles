@@ -10,6 +10,13 @@ alias _i='sudo -i'
 # Convienence 
 alias rev='nc -lvp 9001'
 alias http='python3 -m http.server 8000'
+#SMB File upload/download
+alias smb='sudo impacket-smbserver share -smb2support /tmp/smbshare'
+alias smbtest='sudo impacket-smbserver share -smb2support /tmp/smbshare -user test -password test'
+#using http if SMB is blocked
+alias webdav='sudo wsgidav --host=0.0.0.0 --port=80 --root=/tmp --auth=anonymous'
+#FTP server for file upload/download
+alias pyftp='sudo python3 -m pyftpdlib --port 21 --write'
 
 # Crack Map Exec Backwards Compatibility
 crackmapexec_alias_func() {
